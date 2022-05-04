@@ -1,0 +1,7 @@
+The objective is to identify which images are flipped.
+
+Here I used MNIST dataset. From the dataset, the rows with label 0, 1, 3, 6, 8, 9 are discarded as they are symmetric. Then some images from the remaining ones are flipped. Then I merged the original and flipped images with shuffling to prepare the dataset.
+
+To train the model, vgg19 is used with dropout regularization.
+
+To measure performance, I used classification report. The overall accuracy is 79%.
